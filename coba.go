@@ -17,10 +17,10 @@ func main() {
 	var animal Animal
 
 	switch input {
-	case "kucing":
+	case "anjing":
 		animal = Animal{
-			name:      "kucing",
-			voice:     "Meow",
+			name:      "anjing",
+			voice:     "Gung-gung",
 			ableToFly: false,
 		}
 	case "burung":
@@ -57,4 +57,5 @@ func main() {
 	}
 
 }
+
 
