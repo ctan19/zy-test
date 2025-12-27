@@ -35,6 +35,12 @@ func main() {
 			voice:     "kukuruyuk",
 			ableToFly: false,
 		}
+		case "elang"
+			animal = Animal{
+				name:	"elang"
+				voice: "hiii-hiiiw"
+				ableToFly: true,
+		}
 	default:
 		fmt.Println("Hewan tidak dikenal")
 		return
@@ -51,3 +57,4 @@ func main() {
 	}
 
 }
+
