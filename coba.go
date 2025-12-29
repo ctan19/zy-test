@@ -29,10 +29,10 @@ func main() {
 			voice:     "cuit",
 			ableToFly: true,
 		}
-	case "bebek":
+	case "kucing":
 		animal = Animal{
-			name:      "bebek",
-			voice:     "kuwek-kuwek",
+			name:      "kucing",
+			voice:     "meaw",
 			ableToFly: false,
 		}
 		case "elang"
@@ -57,6 +57,7 @@ func main() {
 	}
 
 }
+
 
 
 
