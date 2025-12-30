@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func luasPersegiPanjang(panjang, lebar float64) float64 {
 	return panjang * lebar
@@ -14,6 +17,14 @@ func kelilingSegitiga(panjang float64) float64 {
 
 func luasSegitiga(alas, tinggi float64) float64 {
 	return (alas * tinggi) / 2
+}
+
+func luasLingkaran(r float64) float64 {
+	return math.Pi * r * r //r = jari jari
+}
+
+func kelilinLingkaran(r float64) float64 {
+	return 2 * math.Pi * r
 }
 
 func main() {
@@ -57,6 +68,18 @@ func main() {
 		fmt.Println("Masukkan tinggi: ")
 		fmt.Scan(&tinggi)
 		fmt.Println("Luas segitiga", luasSegitiga(alas, tinggi), "cm")
+
+	case 5:
+		var r float64
+		fmt.Println("\nMasukkan jari-jari lingkaran: ")
+		fmt.Scan(&r)
+		fmt.Println("Luas lingkaran", luasLingkaran(r), "cm")
+
+	case 6:
+		var r float64
+		fmt.Println("\nMasukkan jari-jari lingkaran: ")
+		fmt.Scan(&r)
+		fmt.Println("Keliling lingaran", kelilinLingkaran(r), "cm")
 
 	default:
 		fmt.Println("\nPilihan tidak valid!")
