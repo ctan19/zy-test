@@ -35,6 +35,8 @@ func main() {
 	fmt.Println("2. Hitung keliling persegi")
 	fmt.Println("3. Hitung keliling segitiga")
 	fmt.Println("4. Hitung luas segitiga")
+	fmt.Println("5. Hitung luas lingkaran")
+	fmt.Println("6. Hitung keliling lingkaran")
 	fmt.Print("Masukkan pilihan angka: ")
 	fmt.Scan(&jenis)
 
